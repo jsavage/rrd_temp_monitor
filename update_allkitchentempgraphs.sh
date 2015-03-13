@@ -1,5 +1,5 @@
 #Call this script from crontab.  Edit crontab with crontab -e
-echo $(date)  # log the date and time
+echo $(date)  # echo the date and time to the stdout (cronlog.log)
 cd /home/pi/rrdtool/
 # ToDo: amend script so that this log file does not grow forever  
 ./update_allkitchentemps.sh >>cronlog.log
