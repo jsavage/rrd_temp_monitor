@@ -35,7 +35,7 @@ LINE1:hotwatertemp$COLOR2:"Outside Temperature [deg $TEMP_SCALE]" \
 DEF:heatingtemp=$DIR'.rrd':heatingtemp:AVERAGE \
 LINE2:heatingtemp$COLOR3:"Heating flow Temperature [deg $TEMP_SCALE]"
 
-#weekly
+#monthly
 rrdtool graph $DIR/$1/temp_monthly.png --start -1m \
 DEF:kitchentemp=$DIR'.rrd':kitchentemp:AVERAGE \
 AREA:kitchentemp$COLOR1:"Inside Temperature [deg $TEMP_SCALE]" \
