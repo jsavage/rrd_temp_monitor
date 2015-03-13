@@ -15,11 +15,11 @@ Key differences:
 
 All mistakes are mine
 
-Dependencies
-perl - sudo apt-get install libwww-perl
-rrdtool - sudo apt-get install rrdtool
-mosquitto - sudo apt-get install mosquitto
-mosquitto commandline clients -  sudo apt-get install mosquitto-clients
+Dependencies:
+-perl: sudo apt-get install libwww-perl
+-rrdtool:  sudo apt-get install rrdtool
+-mosquitto: sudo apt-get install mosquitto
+-mosquitto commandline clients:  sudo apt-get install mosquitto-clients
 
 1. cron calls update_allkitchentempgraphs.sh 
 which then calls
