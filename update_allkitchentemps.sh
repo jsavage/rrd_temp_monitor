@@ -74,7 +74,13 @@ while ($output !~ /YES/g && $attempts < 5)
    #             print $temp3;
     #            print "\n";
      #           print "about to update rrd:\n";
+
+#               The following line is where the data gets put into the rrd
                 $rrd = `/usr/bin/rrdtool update $dir.rrd N:$temp:$temp2:$temp3`;
+#
+#                Now publish this data to mqtt
+#
+                mosquitto_pub -t "rrd/#" -m 'update $dir.rrd N:$temp:$temp2:$temp3`;
         }
  
         $attempts++;
