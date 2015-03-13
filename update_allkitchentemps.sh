@@ -80,7 +80,7 @@ while ($output !~ /YES/g && $attempts < 5)
 #
 #                Now publish this data to mqtt
 #
-                mosquitto_pub -t "rrd/#" -m 'update $dir.rrd N:$temp:$temp2:$temp3`;
+               $outputmq = 'mosquitto_pub -t "rrd" -m "update $dir.rrd N:$temp:$temp2:$temp3"';
         }
  
         $attempts++;
