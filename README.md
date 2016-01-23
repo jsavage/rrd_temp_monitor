@@ -37,11 +37,15 @@ sudo apt-get install libwww-perl
 ./1create_rrd_for_allkitchen.sh 
 mkdir allkitchen
 ./2create_all_rrd_graphs.sh 
+sudo apt-get install imagemagick
+if you changed the default install location rrd_temp_monitor during git clone then change this in update_allkitchentempgraphs.sh and in cron setup (follows)
 
 now setup cron:
 crontab -e
 # m h  dom mon dow   command
 */5 * * * * /home/pi/rrd_temp_monitor/update_allkitchentempgraphs.sh >> /home/pi/rrd_temp_monitor/cronlog.log
+
+
 
 alternatively (not in use at present)
 
