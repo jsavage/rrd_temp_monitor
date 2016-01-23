@@ -40,7 +40,9 @@ mkdir allkitchen
 sudo apt-get install imagemagick
 if you changed the default install location rrd_temp_monitor during git clone then change this in update_allkitchentempgraphs.sh and in cron setup (follows)
 
-now setup cron:
+Set up lighttpd   See http://www.raspberrypi-spy.co.uk/2013/06/how-to-setup-a-web-server-on-your-raspberry-pi/
+
+When you are ready and have tested the above setup cron (check the path):
 crontab -e
 # m h  dom mon dow   command
 */5 * * * * /home/pi/rrd_temp_monitor/update_allkitchentempgraphs.sh >> /home/pi/rrd_temp_monitor/cronlog.log
