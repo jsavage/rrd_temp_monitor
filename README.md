@@ -28,7 +28,7 @@ How it works:
 - before amalgamating all graphs into a single image in /allkitchen
 
 Installation:
-''''
+'''
 git clone https://github.com/jsavage/rrd_temp_monitor.git
 cd rrd_temp_monitor/
 ./1create_rrd_for_allkitchen.sh 
@@ -38,7 +38,7 @@ sudo apt-get install libwww-perl
 mkdir allkitchen
 ./2create_all_rrd_graphs.sh 
 sudo apt-get install imagemagick
-''''
+'''''
 if you changed the default install location rrd_temp_monitor during git clone then change this in update_allkitchentempgraphs.sh and in cron setup (follows)
 
 Set up lighttpd   follow all instructions in this article http://www.raspberrypi-spy.co.uk/2013/06/how-to-setup-a-web-server-on-your-raspberry-pi/
