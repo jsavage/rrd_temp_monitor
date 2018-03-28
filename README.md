@@ -30,13 +30,19 @@ How it works:
 Installation:
 '''
 git clone https://github.com/jsavage/rrd_temp_monitor.git
+
 cd rrd_temp_monitor/
-./1create_rrd_for_allkitchen.sh 
+
 sudo apt-get install rrdtool
+
 sudo apt-get install libwww-perl
+
 ./1create_rrd_for_allkitchen.sh 
+
 mkdir allkitchen
+
 ./2create_all_rrd_graphs.sh 
+
 sudo apt-get install imagemagick
 '''''
 if you changed the default install location rrd_temp_monitor during git clone then change this in update_allkitchentempgraphs.sh and in cron setup (follows)
