@@ -47,7 +47,12 @@ sudo apt-get install imagemagick
 '''''
 if you changed the default install location rrd_temp_monitor during git clone then change this in update_allkitchentempgraphs.sh and in cron setup (follows)
 
-Set up lighttpd   follow all instructions in this article http://www.raspberrypi-spy.co.uk/2013/06/how-to-setup-a-web-server-on-your-raspberry-pi/
+Set up lighttpd   For Raspbian Jessie: follow all instructions in this article http://www.raspberrypi-spy.co.uk/2013/06/how-to-setup-a-web-server-on-your-raspberry-pi/
+
+For Raspbian Stretch:
+
+http://raspberrypimaker.com/installing-php-lighttpd-debian-stretch/
+
 Then:
 ''''
 sudo mkdir /var/www/temps
